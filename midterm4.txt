@@ -1,0 +1,48 @@
+MIDterm 4 review
+
+Where do languages come from?
+
+ 1)Tokenization		=>  2) CFG    => 3) CPU  
+How do we separate			 Behavior 
+potential chunks 
+
+COntext Free Grammar 
+LR - Parser 
+
+Shift Reduce Parsers 
+
+Shift - How do we consume the input source code. 
+ Left/right recursive grammar 
+
+S -> S1  .Left
+S -> 1S  .Right
+
+S -> 11S	101	
+S-> 00S
+S -> SS
+S -> eps
+
+
+-----------------
+ class Monkey:
+	def _init_(self):
+		self.bananas = 10
+
+m = [ Monkey() for x in range(0,10)]
+
+numb = [ m.bananas for mo in m]
+
+print(numb)
+
+---------------------
+def fun1():
+	print('one')
+	return 1
+def fun2():
+	print('two')
+	return 2
+def fun3():
+	print('three')
+	return 3
+
+x = fun1() + fun2() + fun3()

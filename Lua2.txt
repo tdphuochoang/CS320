@@ -1,0 +1,24 @@
+lua 
+
+object = {}
+
+function object.new(self,t)
+local obj = t or {}
+	setmetatable (obj,self)
+	self.__index = self
+	return obj
+end 
+
+orc = 
+{
+hp = 15;
+atk=10
+}
+orc = object.new(object,orc)
+
+---------------
+Rapid Prototying - "Fail fast" 
+	Nobody knows what they want until they use it. 
+	Build the cheapest/easiest/stupidist version of what they think they want, and then ask them.
+
+Agile- Deliver products on short time scale reputedly.

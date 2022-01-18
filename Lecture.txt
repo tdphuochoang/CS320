@@ -1,0 +1,48 @@
+1. Take a token from the input string. 
+
+2. If the token is an operator: 
+	 (a) While the top of the op stack is greater or equal to that ops prec 
+		Pop operators of stack put them in output Q.
+	 (b) Put op in op stack. 
+3. If token is not an op
+	(a) Put in output Q
+4. After input is consumed, pop all op stack out and put in Q. 
+
+
+To add bindings: 
+	1. We need functions in both languages that have well defined arguments. 
+	2. Provide a native function on each and to call that binding. 
+	3. Use the library to patch together. 
+
+------------------"" ----------------
+
+#include <iostream>
+
+extern "C"{
+	#include "lua.h"
+	#include "lualib.h"
+	#include "lauxlib.h"
+}
+
+int main(int argc, char *argv[]){
+	lua_State *L = luaL_newstate();
+	luaL_openlibs(L);
+
+	lua_register(L,"BOB",
+
+	lua_dofile(L,argv[1]);
+
+	lua_close(L);
+}
+
+extern "C" int C_IsEven(lua_State *env){
+	int x = luaL_checkint(env,l);
+	if(x % 2 == 0){
+		luaL_pushboolean(env,true);
+	}else{
+		luaL_pushboolean(env,false);
+	}
+	return 1;
+}
+
+		

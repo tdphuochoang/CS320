@@ -1,0 +1,78 @@
+Imperative - What you write is what happens. The programmer solves problems. 
+
+Declarative - Construction of data 
+             The programmer asks question. 
+Structured - Control flow structures exist. 
+
+O.O.P - Deconstruction of problems into constituent parts. Think in terms of things. 
+
+Class Based - Make 
+Prototype BAsed - Make objects		
+
+Procedural - Buitim mechanisms for calling subroutines. 
+
+Method- A procedure that modifies (global) implicit state. 
+
+function - A procedure that cannot modify state. 
+
+------------------------""--------------------------------------------
+
+Event Driven: writing proedures to handle specific events. You dont write a main. Dont .... a lot of state. 
+							   Event contains all info needed. 
+
+Data Driven: Data decides the behavior of the application. Code does not need to change to affect behavior. 
+
+Logical - Expert System "Deduce" rules and facts from rules and facts. 
+	  Traditional Symbolic AI. 
+
+Computation - The ability to solve an algorithm. 
+
+Calculation - A single math equation. Basic calculator.
+
+Abstractions - The ability to use a concept without understanding how it works. int vs 2's comp. 
+
+Turing machines - The simplest mathematical construction of an arbitrary computation engine. 
+		  Anything that we can compute is computable by a turing machine. 
+
+Stack machine - 3 parts. 
+	1/ Computation stack
+	2/ Operators
+	3/ Ram/Memory
+
+Computation Stack where we store data for operators.
+Push - Adds data to top.
+Pop - Takes off top data. 
+
+Theoretically Infinitely Large. 
+
+Operators. Unary - one operand
+	   Binary - two
+	   Terary - three
+Add- Binary Operation
+   Pop two values 
+   add them 
+   Push the result 
+
+Store - Pop some data and store into memory.
+
+Retrieve - Retrieve data and push into stack. 
+
+Stack machines are CPUs?
+
+CPU --- ALU, bus connect to memory.  
+
+Registers. 
+
+
+------------------""-------------------------
+Binding - When does the memory allocation for a declaration get determined?
+
+Early Binding - All variable declared ... mem alloc's are determined during compile time. 
+
+Late Binding - variable mem alloc are determined at run time. 
+
+x = 3
+x = "Hello"
+x = User input()
+
+

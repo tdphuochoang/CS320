@@ -1,0 +1,45 @@
+Loosely Typed   - The data carries the typing information. Variables can store any type of data. 
+(Dynamically typed)
+
+Late Bound 	- The location for a variables value is determined during runtime. 
+
+Box b = new Box();
+
+
+-------------
+repl.it.com
+
+Lua 
+
+print("Hello World")
+Hello World
+
+io.read("*line")
+hello
+=>hello
+
+3+3
+=> 6
+
+x= 3+ 3
+print(x)
+6
+
+print(type(x))
+number
+x=3.14
+print(type(x))
+number
+print(x)
+3.14
+
+x=6
+y= x + 3.14
+print(y)
+9.14
+print(type(y))
+number
+
+a={}
+print(type(a))
+table 

@@ -1,0 +1,122 @@
+Summer 2018 CS320 Final
+
+Section B:
+1) Most Shell scripting languages dont have good math operations.
+   It is not procedural. 
+2) They know when and where they access variables. 
+3) When the function it declares the data is ending. 
+4) A data type defines an abstraction. 
+5) Imperative Structured Procedural OOP functional declarative. 
+6) Functions are data/functions are not different from other data points. 
+7) Map - Transfroms input data into a new format 
+   Reduce - filtters input data with a selection criteria. 
+
+Section C:
+Given Python, write an equivalent function in Lua and C++.
+
+Lua:
+
+function zip(a,b)
+	if(#a < #b) then 
+	  c=a
+	  a=b
+	  b=c
+     end
+    i = 1
+    c = {}
+    while (i < #b) 
+     do
+	c[#C+1] = a[i]
+	c[#c+1] = b[i]
+	i = i + 1
+    end 
+    while(i < #a)
+    do 
+    c[#c +1] = a[i]
+    i = i+1
+    end 
+    return c
+end 
+
+C++:
+int *zip(int *a, int alen, int *b, int blen){
+  int *C;	int lentemp = 0;
+  int i=0;	int j = 0;
+  if(lena < lenb) {
+   c = a;	lentemp = lena;
+   a = b;	lena = lenb;
+   b = c;	lenb = lentemp;
+}
+c= new int[lena + lenb];
+while(i < lenb){
+  c[i*z + 0] = a[i];
+  c[i*z + 1] = b[i];
+  i++;  j++z;
+}
+while(i < lena){
+   c[j] = a[i];
+   j++; i++;
+}
+return c;
+
+
+Section D:
+
+Python
+
+class Transport:
+def _ _ init _ _ (self):
+  self.speed = 0
+  self.disk = 0
+def go(self,accel):
+ self.speed += accel
+ self.disk  += self.speed
+
+class cart(transport):
+ pass
+class Train(transport):
+ def go(self,accel):
+  self.speed += accel
+  self.disk += z*self.speed 
+
+Lua 
+
+object = {}
+function object:new(t)
+ local obj = t or {}
+ setmetatable(obj, self)
+ self._ _index = self
+ return obj
+end  
+
+transport = object:new( 
+{
+speed = 0
+disk = 0
+} )
+
+function transport:go(accel)
+ self.speed = self.speed + accel
+ self.disk = self.disk + self.speed
+end
+car = transport:new()
+train = transport:new()
+	function train:go(accel)
+	self.speed = self.speed + accel 
+	self.disk = self.disk + self.speed*z
+end  
+
+Section E
+I. False
+II. True 
+III. False
+IV. True
+V. False
+
+I, II, III, IV, V:     ALL TRUE!!!!
+ because E can -> both 0 and 1 (which is powerful)
+
+Section F
+1. deaf
+2. They have arguments
+3. 

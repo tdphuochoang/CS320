@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+int main(int argc, char *argv[]){
+
+	string s;
+	cout << "Hello World" << 3 << 3.14f <<6.28 << endl;
+	cin >> s;
+	cout << "Hello" << s << "!" << endl;
+	
+	
+	
+	return 0;
+}

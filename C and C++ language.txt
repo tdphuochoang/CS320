@@ -1,0 +1,91 @@
+Why many languages?
+	Different languages make different tasks easy.
+
+ C++                                    C
+  					
+ OOP 					No perator overloading
+ Op overloading				Structs
+ Class					
+ Function overloading			No function overloading
+ Dynamicly bound			Early bound
+
+-----------------""--------------------------------------
+
+Missed class
+
+------------------""-----------------------------
+
+OOP- Grouping Data and behavior together as things to solve problems
+
+Land itself to large problems. 
+
+Humans think in abstractions.
+
+OOP is the process of building abstractions. 
+
+Making a class defines a data type. 
+
+A data type is an abstraction. 
+
+C code
+File f;
+fgets(
+
+A well defined abstraction is an abstraction that doesnt need to be broken to be used. 
+
+Well defined abstractions reduce coupling, increase cohension. 
+
+COupling. The degree to which code two piece of code rely on each other. 
+
+Cohesion - How well two pieces of code work together. 
+
+
+-----"" ------------
+
+#IFNDEF _STACK_HPP_
+#DEFINE _STACK_HPP_
+
+class Stack{
+
+	private:
+	    int top;
+	    int *data;
+	    int capacity;
+	    void grow();
+	public:
+	    Stack();
+	    ~Stack();
+	    void Push(int d);
+	    int Pop();
+
+};
+
+
+#ENDIF
+
+-----------""------------------
+#include "stack.hpp"
+
+Stack::Stack(){
+	this->top = 0;
+
+int Stack::Pop(){
+	return -1;
+}
+void Stack::Push(int value){
+}
+
+void Stack::grow(){
+	int *temp = new int(this->capacity*2);
+	for(int i = 0; i<this->capacity;i++)
+}
+
+--------""----------------------
+#include <iostream>
+#include "stack.hpp"
+using namespace std;
+
+int main(int argc, char *argv[]){
+	Stack *s = new Stack();
+	delete s;
+}

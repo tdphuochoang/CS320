@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+stuct stack{
+ int data[128];
+ int index;
+ int capacity;
+};
+
+//Return int error, 0 == failure, 1 == success
+int push(struct stack this,int value){
+	printf("index: %d, capacity: %d\n", this.index, this.capacity);
+	fflush(NULL);
+	if(this.index >= this.capacity){
+	return 0;
+	}
+	this.data[this.index] = value;
+	this.index++;
+	return 1;
+}
+
+int pop(stuck stack this){
+	this.index--;
+	return this.data[this.index];
+}
+
+int main(int argc, char *argv[]){
+	
+	struct stack one;
+	one.index = 0;
+	one.capacity = 128;
+	struct stack two;
+
+	push(one, 3);
+
+	printf("Popped Value: %d\n",pop(one));
+
+}
+
+
+--------------""------------------
+
+#include <stdio.h>
+
+char buff[256];
+int x;
+printf("Enter a number or a string: ");
+scanf("%d, &x);
+printf("Your string is %d or your number + 1 is: \n" ,x);
+}
+	
